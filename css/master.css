@@ -54,13 +54,13 @@ header::before{
   flex-basis: 420px;
 }
 
-.header-splash > h1{
+.header-splash > h2{
   margin: 45px 0;
   font-family: 'Gochi Hand', cursive;
   font-size: 3.75em;
   font-weight: normal;
 }
-.header-splash > h1::after{
+.header-splash > h2::after{
   content: '.';
   color: #d4213d;
 
@@ -74,8 +74,7 @@ header::before{
   margin: 26px 0;
 
 }
-.header-icons{
-  display: inline-block;
+.header-social > i{
   cursor: url(../img/pointer.png), pointer;
   width: 2em;
   height: 2em;
@@ -88,7 +87,7 @@ header::before{
   color: rgba(255,255,255,0.5);
   transition: all 0.3s ease;
   }
-.header-icons:hover{
+.header-social > i:hover{
   color: #f4f4f4;
   background: #d4213d;
 }
@@ -111,17 +110,17 @@ header::before{
   align-items: center;
   flex-wrap: wrap;
 }
-.feature-container{
+.features-container{
   flex-basis: 330px;
   margin: 15px 5px;
   text-align: center;
   color: #848484;
 }
-.feature-container:hover{
+.features-container:hover{
   cursor: url(../img/pointer.png), pointer;
   color: #000;
 }
-.feature-container > i{
+.features-container > i{
   width: 2em;
   height: 2em;
   display: inline-block;
@@ -133,13 +132,13 @@ header::before{
   color:#fff;
   transition: 0.3s all ease;
   }
-  .feature-container:hover > i{
+  .features-container:hover > i{
   -webkit-transform: scale(1.2); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
   -ms-transform: scale(1.2); /* IE 9 */
   transform: scale(1.2); /* IE 10, Fx 16+, Op 12.1+ */
 
   }
-.feature-container > h3{
+.features-container > h3{
   font-family: 'Roboto', sans-serif;
   font-size: 1.375em;
   margin: 30px 0;
@@ -215,7 +214,7 @@ header::before{
   background: #fff;
   outline: none;
 }
-.notification-form button{
+.notification-form input[type="submit"]{
   cursor: url(../img/pointer.png), pointer;
   width: 141px;
   height: 56px;
@@ -227,7 +226,7 @@ header::before{
   color: #fff;
   transition: all 0.3s ease;
 }
-.notification-form button:hover{
+.notification-form input[type="submit"]:hover{
   background: #fc2547;
   color: #fff;
 }
