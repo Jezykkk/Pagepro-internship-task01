@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Notify. Intern - task 01. </title>
@@ -52,9 +53,9 @@
             <input type="email" id="notf_email" placeholder="Email Address"></input><button>Notify</button>
           </form>
         </div>
-		<div class="notf_video">
-			<img src="img/video.png" alt="Video player">
-		</div>
+		    <div class="notf_video">
+          <iframe src="https://player.vimeo.com/video/160397656" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    	 </div>
       </div>
     </section>
     <section class="stay-in-touch">
@@ -62,27 +63,27 @@
         <blockquote>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum velit vitae nulla molestie eu commodo nulla dapib us. Donec id sollicitudin urna. Integer at dui ac leo fermentum varius eleifend ut.”</blockquote>
         <h3>Jane Hunt</h3>
         <div class="stay-in-touch-users">
-          <div id="person_01"><p class="user-mask">s</p></div>
-          <div id="person_02"><p class="user-mask"></p></div>
-          <div id="person_03"><p class="user-mask"></p></div>
-          <div id="person_04"><p class="user-mask"></p></div>
-          <div id="person_05"><p class="user-mask"></p></div>
-          <div id="person_06"><p class="user-mask"></p></div>
-          <div id="person_07"><p class="user-mask"></p></div>
-          <div id="person_08"><p class="user-mask"></p></div>
-          <div id="person_09"><p class="user-mask"></p></div>
-          <div id="person_10"><p class="user-mask"></p></div>
-          <div id="person_11"><p class="user-mask"></p></div>
-          <div id="person_12"><p class="user-mask"></p></div>
-          <div id="person_13"><p class="user-mask"></p></div>
-          <div id="person_14"><p class="user-mask"></p></div>
-          <div id="person_15"><p class="user-mask"></p></div>
-          <div id="person_16"><p class="user-mask"></p></div>
-          <div id="person_17"><p class="user-mask"></p></div>
-          <div id="person_18"><p class="user-mask"></p></div>
-          <div id="person_19"><p class="user-mask"></p></div>
-          <div id="person_20"><p class="user-mask"></p></div>
-          <div id="person_21"><p class="user-mask"></p></div>
+          <div><div id="person_01" class="people person_01"><p class="user-mask"></p></div></div>
+          <div><div id="person_02" class="people person_02"><p class="user-mask"></p></div></div>
+          <div><div id="person_03" class="people person_03" ><p class="user-mask"></p></div></div>
+          <div><div id="person_04" class="people person_04"><p class="user-mask"></p></div></div>
+          <div><div id="person_05" class="people person_05"><p class="user-mask"></p></div></div>
+          <div><div id="person_06" class="people person_06"><p class="user-mask"></p></div></div>
+          <div><div id="person_07" class="people person_07"><p class="user-mask"></p></div></div>
+          <div><div id="person_08" class="people person_08"><p class="user-mask"></p></div></div>
+          <div><div id="person_09" class="people person_09"><p class="user-mask"></p></div></div>
+          <div><div id="person_10" class="people person_10"><p class="user-mask"></p></div></div>
+          <div><div id="person_11" class="people person_11"><p class="user-mask"></p></div></div>
+          <div><div id="person_12" class="people person_12"><p class="user-mask"></p></div></div>
+          <div><div id="person_13" class="people person_13"><p class="user-mask"></p></div></div>
+          <div><div id="person_14" class="people person_14"><p class="user-mask"></p></div></div>
+          <div><div id="person_15" class="people person_15"><p class="user-mask"></p></div></div>
+          <div><div id="person_16" class="people person_16"><p class="user-mask"></p></div></div>
+          <div><div id="person_17" class="people person_17"><p class="user-mask"></p></div></div>
+          <div><div id="person_18" class="people person_18"><p class="user-mask"></p></div></div>
+          <div><div id="person_19" class="people person_19"><p class="user-mask"></p></div></div>
+          <div><div id="person_20" class="people person_20"><p class="user-mask"></p></div></div>
+          <div><div id="person_21" class="people person_21"><p class="user-mask"></p></div></div>
         </div>
         <h2>Say Hi &#38; Get in Touch</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse. </p>
@@ -107,5 +108,55 @@
         </ul>
       </div>
     </footer>
+    <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).on('ready', function() {
+
+        $(".stay-in-touch-users").slick({
+          infinite: true,
+          slidesToShow: 20,
+          slidesToScroll: 5,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          responsive: [
+          {
+            breakpoint: 1150,
+            settings: {
+              slidesToShow: 15,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 10,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1
+            }
+          }
+        ]
+        });
+
+      });
+  </script>
   </body>
 </html>
