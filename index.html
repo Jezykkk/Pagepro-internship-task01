@@ -50,8 +50,9 @@
           <h3>Get Notified Of Any Updates!</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
           <form>
-            <input type="email" id="notf_email" placeholder="Email Address"></input><button>Notify</button>
+            <input type="email" id="notf_email" placeholder="Email Address"></input><button disabled="true" id="notf_button">Notify</button>
           </form>
+          <div id="validation_tips"></div>
         </div>
 		    <div class="notf_video">
           <iframe src="https://player.vimeo.com/video/160397656" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -84,16 +85,37 @@
           <div><div class="people person_19"><p class="user-mask"></p></div></div>
           <div><div class="people person_20"><p class="user-mask"></p></div></div>
           <div><div class="people person_21"><p class="user-mask"></p></div></div>
+          <div><div class="people person_01"><p class="user-mask"></p></div></div>
+          <div><div class="people person_02"><p class="user-mask"></p></div></div>
+          <div><div class="people person_03" ><p class="user-mask"></p></div></div>
+          <div><div class="people person_04"><p class="user-mask"></p></div></div>
+          <div><div class="people person_05"><p class="user-mask"></p></div></div>
+          <div><div class="people person_06"><p class="user-mask"></p></div></div>
+          <div><div class="people person_07"><p class="user-mask"></p></div></div>
+          <div><div class="people person_08"><p class="user-mask"></p></div></div>
+          <div><div class="people person_09"><p class="user-mask"></p></div></div>
+          <div><div class="people person_10"><p class="user-mask"></p></div></div>
+          <div><div class="people person_11"><p class="user-mask"></p></div></div>
+          <div><div class="people person_12"><p class="user-mask"></p></div></div>
+          <div><div class="people person_13"><p class="user-mask"></p></div></div>
+          <div><div class="people person_14"><p class="user-mask"></p></div></div>
+          <div><div class="people person_15"><p class="user-mask"></p></div></div>
+          <div><div class="people person_16"><p class="user-mask"></p></div></div>
+          <div><div class="people person_17"><p class="user-mask"></p></div></div>
+          <div><div class="people person_18"><p class="user-mask"></p></div></div>
+          <div><div class="people person_19"><p class="user-mask"></p></div></div>
+          <div><div class="people person_20"><p class="user-mask"></p></div></div>
+          <div><div class="people person_21"><p class="user-mask"></p></div></div>
         </div>
         <h2>Say Hi &#38; Get in Touch</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse. </p>
         <div class="stay-in-touch-social">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-          <i class="fa fa-pinterest" aria-hidden="true"></i>
-          <i class="fa fa-google-plus-official" aria-hidden="true"></i>
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          <i class="fa fa-youtube-square" aria-hidden="true"></i>
+          <a href="#" class="stay-in-touch-social-icons"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="#" class="stay-in-touch-social-icons"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#" class="stay-in-touch-social-icons"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+          <a href="#" class="stay-in-touch-social-icons"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+          <a href="#" class="stay-in-touch-social-icons"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          <a href="#" class="stay-in-touch-social-icons"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
@@ -110,16 +132,14 @@
     </footer>
     <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/email-validation.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
       $(document).on('ready', function() {
-
         $(".stay-in-touch-users").slick({
           infinite: true,
           slidesToShow: 20,
-          slidesToScroll: 5,
+          slidesToScroll: 10,
           arrows: false,
-          autoplay: true,
-          autoplaySpeed: 2000,
           responsive: [
           {
             breakpoint: 1150,
@@ -155,7 +175,6 @@
           }
         ]
         });
-
       });
   </script>
   </body>

@@ -244,6 +244,16 @@ header::before{
   width: 100%;
   height: 320px;
 }
+#notf_button:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+#validation_tips{
+  display: inline-block;
+  margin: 10px;
+  background: #c63129;
+  color: #fff;
+}
 
 /*/////////////STAY IN TOUCH////////////////////////*/
 .stay-in-touch{
@@ -298,7 +308,7 @@ header::before{
   display: flex;
   justify-content: space-between;
 }
-.stay-in-touch-social > i{
+.stay-in-touch-social-icons > i{
   cursor: url(../img/pointer.png), pointer;
   width: 1.6em;
   height: 1.6em;
@@ -309,8 +319,10 @@ header::before{
   line-height: 1.6em;
   text-align: center;
   color: #fff;
+  transition: 1s all ease;
 }
-.stay-in-touch-social > i:hover{
+.stay-in-touch-social-icons:hover > i{
+  transform: rotate3d(0, 1, 0, 360deg);
   background: #df596e;
 }
 .stay-in-touch-users{
