@@ -456,7 +456,7 @@ footer{
 
 }
 .footer-container > ul{
-  min-height: 130px;
+  height: 130px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
