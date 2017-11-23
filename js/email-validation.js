@@ -8,16 +8,16 @@ function EmailVerification(){
     var emailValidation = emailRegEx.test(emailInput.value);
     if(emailValidation){
       emailButton.disabled = false;
-      emailTips.innerHTML = "";
     }
     else{
       emailButton.disabled = true;
-      emailTips.innerHTML = "Type correct email adress. Example: email@domain.com";
+      emailTips.classList.add("tips_visibility");
     }
   }
   else{
     emailButton.disabled = true;
-    emailTips.innerHTML = "";
+    emailTips.classList.remove("tips_visibility");
   }
 }
+
 emailInput.addEventListener("keyup", function(){EmailVerification();});
