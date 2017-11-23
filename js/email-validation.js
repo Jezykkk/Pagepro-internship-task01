@@ -8,6 +8,7 @@ function EmailVerification(){
     var emailValidation = emailRegEx.test(emailInput.value);
     if(emailValidation){
       emailButton.disabled = false;
+      emailTips.classList.remove("tips_visibility");
     }
     else{
       emailButton.disabled = true;
