@@ -314,23 +314,38 @@ header::before{
   display: flex;
   justify-content: space-between;
 }
-.stay-in-touch-social-icons > i{
+.stay-in-touch-social-icons{
+  display: inline-block;
+  position: relative;
+}
+.stay-in-touch-social-icons > div{
   cursor: url(../img/pointer.png), pointer;
   width: 1.6em;
   height: 1.6em;
   margin-right: 10px;
   font-size: 1.5em;
-  background: #d4d4d4;
   border-radius: 50%;
   line-height: 1.6em;
   text-align: center;
-  color: #fff;
-  transition: 1s all ease;
+  transition: 0.5s all ease;
+  backface-visibility: hidden;
 }
-
-.stay-in-touch-social-icons:hover > i{
-  transform: rotate3d(0, 1, 0, 360deg);
+.back{
+  position: absolute;
+  top:0;
+  color: #fff;
   background: #df596e;
+  transform: rotateY(-180deg);
+}
+.front{
+  background: #d4d4d4;
+  color: #fff;
+}
+.stay-in-touch-social-icons:hover .front{
+  transform: rotateY(180deg);
+}
+.stay-in-touch-social-icons:hover .back{
+  transform: rotateY(0);
 }
 .stay-in-touch-users{
   max-width: 100%;
@@ -345,7 +360,7 @@ header::before{
   position: absolute;
   background: rgba(255,255,255,1);
   background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
-    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
   background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
   background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
   background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
