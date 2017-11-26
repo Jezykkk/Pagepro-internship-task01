@@ -4,16 +4,19 @@
   box-sizing: border-box;
   border: 0;
 }
+
 @font-face {
 font-family: MyriadPro-Regular;
 src: url('../fonts/MyriadPro-Regular.otf ');
 }
 
-
 body{
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   color: #222222;
+}
+a, button{
+  cursor: url(../img/pointer.png), pointer;
 }
 
 /*/////////////HEADER////////////////////////*/
@@ -76,7 +79,6 @@ header::before{
 }
 .header-icons{
   display: inline-block;
-  cursor: url(../img/pointer.png), pointer;
   width: 2em;
   height: 2em;
   margin-right: 15px;
@@ -215,7 +217,6 @@ header::before{
   outline: none;
 }
 .notification-form button{
-  cursor: url(../img/pointer.png), pointer;
   width: 141px;
   height: 56px;
   border-top-right-radius: 15px;
@@ -319,7 +320,6 @@ header::before{
   position: relative;
 }
 .stay-in-touch-social-icons > div{
-  cursor: url(../img/pointer.png), pointer;
   width: 1.6em;
   height: 1.6em;
   margin-right: 10px;
@@ -504,7 +504,6 @@ footer{
   transition: 0.5s all ease;
 }
 .footer-container a:hover{
-  cursor: url(../img/pointer.png), pointer;
   color: #fff;
   background: #d4213d;
   -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.09);
